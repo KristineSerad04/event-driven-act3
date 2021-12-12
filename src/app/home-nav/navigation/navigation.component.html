@@ -1,0 +1,61 @@
+
+<div class="main_header">
+    <div class="headimg">
+         <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t39.30808-1/p320x320/257729137_1294831670952847_6196077164730189645_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeFoJixCDdjAVSwLnTSegySNANayEAsM7RAA1rIQCwztEKWn98VeUQNHFiyXuxIJLBt2ghCaHNd6YWvGN1A5tgzL&_nc_ohc=_EEchVrF_MMAX9I94nX&_nc_oc=AQk9Ld4Lx3NpOrEiKy6p5EDzCJIHSXrXPNQS2k0d4_VmIS9EVZhIWcyjdzOUs8np66E&_nc_ht=scontent.fceb1-3.fna&oh=993cdcf8e129a6e3c59ad38b8f28438d&oe=61B9B20E" alt="">
+         <p>{{name}} </p>
+    </div>
+</div>
+<div class="main-content">
+    <h3 class="info">MY DETAILS</h3>
+    <mat-drawer-container class="nav-container">
+        <mat-drawer class="side"mode="side" opened >
+             <input type="hidden" #selection>
+             
+                <button mat-button (click)="selection.value = 'HOME'" tabindex="0">
+                    <a href="#" class="flex"><mat-icon aria-hidden="false">home</mat-icon>Home</a>
+                </button>
+                <button mat-button (click)="selection.value = 'PROFILE'" tabindex="0">
+                  <a href="#" class="flex"><mat-icon aria-hidden="false">person</mat-icon>Profile</a>
+                  
+                </button>
+                <button mat-button (click)="selection.value = 'CONTACT'" tabindex="0">
+                    <a href="#" class="flex" ><mat-icon aria-hidden="false">phone</mat-icon>Contact</a>
+                  </button>
+                  <button mat-button (click)="selection.value = 'GALLERY'" tabindex="0">
+                    <a href="#" class="flex"><mat-icon aria-hidden="false">image</mat-icon>Gallery</a>
+                  </button>
+                  
+       </mat-drawer>
+        <mat-drawer-content [ngSwitch]="selection.value">
+           
+            <div class="Profile"  *ngSwitchDefault="'HOME'">
+                <h4 class="title"><img class="home_pic" src="https://scontent.fceb1-3.fna.fbcdn.net/v/t39.30808-1/p320x320/257729137_1294831670952847_6196077164730189645_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeFoJixCDdjAVSwLnTSegySNANayEAsM7RAA1rIQCwztEKWn98VeUQNHFiyXuxIJLBt2ghCaHNd6YWvGN1A5tgzL&_nc_ohc=_EEchVrF_MMAX9I94nX&_nc_oc=AQk9Ld4Lx3NpOrEiKy6p5EDzCJIHSXrXPNQS2k0d4_VmIS9EVZhIWcyjdzOUs8np66E&_nc_ht=scontent.fceb1-3.fna&oh=993cdcf8e129a6e3c59ad38b8f28438d&oe=61B9B20E" alt="">{{home}}</h4>
+                 <div class="home"><br><br><br>
+                     <h3>WELCOME </h3>
+                     <h4>To</h4>
+                     <h5>My Profile ,Contact and Gallery</h5>
+                     <p><strong>Application</strong>  Using <img
+                        width="40"
+                        alt="Angular Logo"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+                      />Angular</p>
+                 </div>
+                
+           </div>
+             <div class="Profile" *ngSwitchCase="'PROFILE'">
+                  <h4 class="title">{{profile}}</h4>
+                  <app-profile></app-profile>
+             </div>
+             <div class="Profile" *ngSwitchCase="'CONTACT'">
+                <h4 class="title">{{contact}}</h4>
+                <app-contact></app-contact>
+            </div>
+            <div class="Profile" *ngSwitchCase="'GALLERY'">
+                <h4 class="title">{{gallery}}</h4>
+                <app-gallery></app-gallery>
+           </div>
+          
+        </mat-drawer-content>
+    </mat-drawer-container>
+</div>
+
