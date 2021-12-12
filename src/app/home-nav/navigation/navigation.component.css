@@ -1,0 +1,158 @@
+.main_header{
+    width: 40%;
+   height: auto;
+    float: left;
+    
+}
+.home{
+    position:relative;
+    width: 90%;
+    text-align: center;
+}
+
+.home h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #555;
+}
+.home_pic{
+    width: 30px;
+    margin-right: 3%;
+    border: 1px solid #fff;
+    height: 30px;
+    border-radius: 50%;
+}
+.home h4{
+    font-size: 20px;
+    font-weight: 200;
+    color: #555;
+}
+.home h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+}
+.home p{
+    font-size: 27px;
+    font-weight: 400;
+    color: #555;
+}
+.headimg{
+    position: absolute;
+    width: 400px;
+    top: 20%;
+    height: 300px;
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 50%;
+    left: -8%;
+    border-bottom-left-radius:50% ;
+    box-shadow: 0 4px 4px 0 rgba(48, 48, 48, 0.555);
+    background-color: pink;
+}
+.headimg img{
+    position: absolute;
+    left: 30%;
+    width: 30%;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.headimg p{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 50%;
+    position: absolute;
+    left: 30%;
+  
+}
+mat-icon{
+    font-size: 20px;
+}
+.Profile{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    height: auto
+    ;
+}
+.title{
+    width: 30%;
+    text-align: center;
+    color: #fff;
+    padding: 7px;
+    display: flex;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: pink;
+}
+.flex{
+  
+    color: #777;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    
+    text-decoration: none;
+    
+   
+   
+}
+
+
+
+.side button{
+    width: 100%;
+    display: flex;
+    
+       
+}
+
+.side{
+    text-align: center;
+    width: 30%;
+    display: flex;
+    overflow: hidden;
+}
+
+.main-content{
+    float: right;
+    width: 70% ;
+    position: relative;
+   
+}
+.info{
+    padding: 10px;
+    width:80%;
+    color: #555;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px rgba(54, 52, 52, 0.082) solid;
+    box-shadow: 0 4px 4px 0 RGB(43 80 237 / 20%);
+}
+.nav-container{
+
+        width: 80%;
+        height:500px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 4px 0 RGB(43 80 237 / 20%);
+        border: 1px solid rgba(85, 85, 85, 0.089);
+      
+}
+.side button:hover{
+    background-color: pink;
+    color: #fff;
+}
+ .flex:hover{
+    color: #fff;
+}
+mat-drawer-content{
+    overflow: hidden;
+    
+}
