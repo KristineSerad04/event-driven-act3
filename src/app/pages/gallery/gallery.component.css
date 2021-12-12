@@ -1,0 +1,12 @@
+.contact{
+    position: relative;
+    width: 90%;
+    height: auto;
+    padding-top: 20px;
+    overflow: hidden;
+}
+img{
+    width: 20%;
+    float: left;
+    margin: 2%;
+}
